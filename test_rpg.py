@@ -49,4 +49,4 @@ def test_los_muertos_no_se_curan():
     
     p.heal(p, 500)
     assert p.hp == 0
-    assert p.is_alive is False
+    assert p.esta_vivo is False
