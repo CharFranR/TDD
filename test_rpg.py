@@ -25,14 +25,12 @@ def test_personaje_muere_si_hp_llega_a_cero():
     
     enemigo.atacar(heroe, dano=1500)
     
-    assert heroe.hp == 0  # El HP no debe quedar en -500
+    assert heroe.hp == 0 
     assert heroe.esta_vivo == False
 
 def test_curar_personaje():
-    """Prueba 1: Curar a un personaje herido aumenta sus HP."""
     p = Personaje()
-    # Usamos el ataque para bajar vida a 800
-    p.attack(p, 200) 
+    p.atacar(p, 200) 
     
     p.heal(p, 100)
     assert p.hp == 900
