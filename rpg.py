@@ -11,7 +11,10 @@ class Personaje:
             objetivo.esta_vivo = False
 
 
-    def heal(self, objetivo, heal_q):   
+    def heal(self, objetivo, heal_q): 
+
+
+
         objetivo.hp += heal_q
         
         if objetivo.hp > 1000:

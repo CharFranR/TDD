@@ -45,7 +45,7 @@ def test_no_curar_mas_del_maximo():
 def test_los_muertos_no_se_curan():
     p = Personaje()
     p.hp = 0
-    p.is_alive = False
+    p.esta_vivo = False
     
     p.heal(p, 500)
     assert p.hp == 0
