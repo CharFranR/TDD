@@ -13,7 +13,8 @@ class Personaje:
 
     def heal(self, objetivo, heal_q): 
 
-
+        if objetivo.esta_vivo == False:
+            return
 
         objetivo.hp += heal_q
         
