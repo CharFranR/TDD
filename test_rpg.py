@@ -35,9 +35,9 @@ def test_curar_personaje():
     p.heal(p, 100)
     assert p.hp == 900
 
-def test_no_curar_mas_del_maximo(self):
+def test_no_curar_mas_del_maximo():
     p = Personaje()
     p.hp = 900  
         
     p.heal(p, 200)
-    self.assertEqual(p.hp, 1000, "La vida no debe exceder los 1000 HP máximos.")
+    assert p.hp == 1000
